@@ -9,7 +9,7 @@ const fs = require("fs");
 
 class SwitchNativePathToWebPath {
     constructor(dirArr) {
-        this.dirArr = dirArr || ["./node_modules/audaque-ssz"];//需要处理的目录 需要在node_modules目录下
+        this.dirArr = dirArr || ["./node_modules/modulename"];//需要处理的目录 需要在node_modules目录下
         this.pathArr = [];
         this.alias = {};
     }
@@ -153,7 +153,7 @@ module.exports = function (env) {
                     {
                         test: /\.js$/,
                         include: [
-                            path.resolve(__dirname, "node_modules/audaque-ssz"),
+                            //path.resolve(__dirname, "node_modules/modulename"),
                             path.resolve(__dirname, "node_modules/react-native-root-siblings"),
                             path.resolve(__dirname, "node_modules/react-native-root-toast"),
                             path.resolve(__dirname, "node_modules/react-native-root-modal"),
@@ -228,7 +228,7 @@ module.exports = function (env) {
                 alias: Object.assign(
                     {},
                     {"react-native": "react-native-web"},
-                    new SwitchNativePathToWebPath(["./lib/audaque-ssz"]).getAlias()
+                    new SwitchNativePathToWebPath(["./lib/modulepath"]).getAlias()
                 ),
                 extensions: [".web.js", ".js"]
 
