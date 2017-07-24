@@ -1,4 +1,5 @@
 ```
+//web 入口
 //第三方库
 import React,{Component} from "react";
 import {AppRegistry, View, Platform,Text,TouchableOpacity}from "react-native";
