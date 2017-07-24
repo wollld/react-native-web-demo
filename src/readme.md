@@ -37,7 +37,6 @@ class TaskAction extends Component{
                     <View style={{flex:1}}>
                         <Route exact path="/" component={TaskList}/>
                         <Route  path="/Detail/:templateId" component={Detail}/>
-                        <Route  path="/Preview" component={Preview}/>
                         <Route  path="/DoTask/:type/:id" component={DoTask}/>
                     </View>
                 </ConnectedRouter>
