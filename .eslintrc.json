@@ -1,0 +1,48 @@
+//eslint 代码规范约束配置
+//依赖 babel-eslint eslint eslint-plugin-flowtype eslint-plugin-react
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "commonjs": false
+    },
+    "parser": "babel-eslint",
+    "extends": ["eslint:recommended", "plugin:react/recommended","plugin:flowtype/recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true,
+            "arrowFunctions": true,
+            "classes": true,
+            "modules": true,
+            "defaultParams": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "flowtype"
+    ],
+    "rules": {
+        "indent": [
+            0,
+            "tab"
+        ],
+        "linebreak-style": [
+            0,
+            "unix"
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-console": 0,
+        "react/prop-types": 0,
+        "react/no-string-refs": 1
+    }
+}
