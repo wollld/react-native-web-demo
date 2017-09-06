@@ -1,3 +1,6 @@
+//简化react-native引入lib中库路径,依赖babel-plugin-module-resolver babel-preset-react
+//如import BaseComponent from '../../../audaque-ssz'写成import BaseComponent from 'audaque-ssz'
+
 {
   "presets": [
     "react-native"
@@ -22,5 +25,3 @@
 
   ]
 }
-//简化react-native引入lib中库路径,依赖babel-plugin-module-resolver babel-preset-react
-//如import BaseComponent from '../../../audaque-ssz'写成import BaseComponent from 'audaque-ssz'
