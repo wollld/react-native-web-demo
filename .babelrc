@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "react-native"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "audaque-ssz": "./lib/audaque-ssz",
+          "react-native-root-siblings": "./lib/react-native-root-siblings",
+          "react-native-root-toast": "./lib/react-native-root-toast",
+          "react-native-baidumap": "./lib/react-native-baidumap"
+        },
+        "extensions": [
+          ".js",
+          ".ios.js",
+          ".android.js"
+        ]
+      }
+    ]
+
+  ]
+}
+//简化react-native引入lib中库路径,依赖babel-plugin-module-resolver babel-preset-react
+//如import BaseComponent from '../../../audaque-ssz'写成import BaseComponent from 'audaque-ssz'
